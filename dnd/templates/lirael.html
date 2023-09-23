@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Character Details{% endblock %}
+
+{% block content %}
+<div class="header">
+<h2>Character Name: Lirael Nekht-Tet</h2>
+<img src="{{ url_for('static', filename='../static/lirael.png')}}" height="200">
+</div>
+<div class="content-container">
+    <div class="story">
+         <h2>Personality</h2>
+        <p>Lirael is known for her artistic and creative spirit. She has a natural talent for music and can often be found playing melodic tunes on various instruments. Her presence brings a sense of tranquility to those around her, and she has a close bond with nature.</p>
+
+        <h2>Backstory</h2>
+        <p>Lirael's connection to nature and music was nurtured by her parents' encouragement of self-expression. She believes that beauty can be found in even the harshest of landscapes. Her artistic endeavors serve as a reminder of the delicate balance between the empire and its environment.</p>
+    </div>
+</div>
+{% endblock %}

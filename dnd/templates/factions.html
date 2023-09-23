@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Factions List{% endblock %}
+
+{% block content %}
+<h2>Factions List</h2>
+<ul>
+    {% for faction in factions %}
+    <li><a href="{{ url_for('faction', faction_id=factions['id'])}}">{{ faction['name'] }}</a> - {{ faction['description'] }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}

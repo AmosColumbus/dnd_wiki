@@ -1,0 +1,82 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background image */
+body {
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #f0f0f0; /* Fallback background color */
+    font-family: Arial, sans-serif; /* Specify your preferred font */
+}
+
+/* Style the header */
+.header {
+    /*background-color: #333; */ /* Dark background color for the header */
+    padding: 20px;
+    text-align: center;
+    color: red;
+}
+
+/* Style navigation links */
+.navbar {
+    background-color: #444; /* Dark background color for the navigation bar */
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #fff; /* Text color for navigation links */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Style navigation links on hover */
+.navbar a:hover {
+    background-color: #555; /* Darker background color on hover */
+}
+
+/* Style the main content container */
+.container {
+    padding: 20px;
+}
+
+/* Style headings */
+h1, h2, h3 {
+    color: #333; /* Text color for headings */
+}
+
+/* Style paragraphs */
+p {
+    line-height: 1.6; /* Adjust line height for better readability */
+}
+
+/* Style links within content */
+a {
+    color: #007bff; /* Link color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+
+/* Style images */
+img {
+    max-width: 100%; /* Ensure images don't overflow their containers */
+    height: auto;
+}
+
+.content-container {
+    max-width: 1000px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* This centers the container horizontally */
+    padding: 20px; /* Add some padding for spacing */
+    background-color: #f5f5f5; /* Set your desired background color */
+}
+/* Add additional custom styles as needed */

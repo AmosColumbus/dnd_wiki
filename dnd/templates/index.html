@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <div class="header">
+    <title>Wiki Pages</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </div>
+</head>
+<body>
+    <h1>Wiki Pages</h1>
+    <ul>
+
+            <li><a href="{{ url_for('character_list')}}">{{ "Characters" }}</a></li>
+        <li><a href="{{ url_for('factions')}}">{{ "Factions" }}</a></li>
+        <li><a href="{{ url_for('character_list')}}">{{ "Locations" }}</a></li>
+        <li><a href="{{ url_for('character_list')}}">{{ "Historical events" }}</a></li>
+
+    </ul>
+</body>
+</html>

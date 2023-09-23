@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Character Details{% endblock %}
+
+{% block content %}
+<div class="header">
+<h2>Character Name: Elara Nekht-Tet</h2>
+<img src="{{ url_for('static', filename='../static/elara.png')}}" height="200">
+</div>
+<div class="content-container">
+    <div class="story">
+         <h2>Personality</h2>
+        <p>Elara is adventurous and free-spirited. She has a thirst for exploration and loves discovering the secrets of the desert. Her curiosity often leads her into unexpected situations, and her optimism is infectious. She has a special bond with her younger siblings and often serves as their confidante.</p>
+
+        <h2>Backstory</h2>
+        <p>Elara has always been drawn to the desert's mysteries, finding solace in its vastness. She challenges traditional gender roles within the family and seeks to prove that strength and courage come in many forms. Her sense of wonder has brought her family valuable knowledge from her explorations.</p>
+    </div>
+</div>
+{% endblock %}
