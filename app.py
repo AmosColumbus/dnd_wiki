@@ -137,14 +137,14 @@ def faction(faction_id):
 
 
 # Find the character by ID
-    faction = next((char for char in factions if char["id"] == faction_id), None)
+    found_faction = next((fact for fact in factions if fact["id"] == faction_id), None)
 
-    if faction:
-        # Construct the template name dynamically based on character_id
+    if found_faction:
+        # Construct the template name dynamically based on faction_id
         template_name = f"{faction_id}.html"
-        return render_template(template_name, faction=faction)
+        return render_template(template_name, faction=found_faction)
     else:
-        return "Character not found", 404
+        return "Faction not found", 404
 
 
 
