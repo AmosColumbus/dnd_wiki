@@ -1,7 +1,7 @@
 import os
 import shutil
 from flask_frozen import Freezer
-from app import app, wiki_data, characters, factions  # Import your Flask app and sample data
+from app import app, wiki_data, characters, factions_list  # Import your Flask app and sample data
 
 # Initialize Flask-Freezer for freezing the app
 freezer = Freezer(app)
@@ -17,7 +17,7 @@ def url_generator():
     for character in characters:
         yield 'character', {'character_id': character['id']}
 
-    for faction in factions:
+    for faction in factions_list:
         yield 'faction', {'faction_id': faction['id']}
 
 
