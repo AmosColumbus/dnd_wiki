@@ -4,11 +4,40 @@ app = Flask(__name__)
 
 # Sample data (you can replace this with your own data storage)
 wiki_data = {
-    "characters": {"title": "Characters", "content": "Here you can find the list of characters.", "id": "characters"}}#,
-    #"Factions": {"title": "Page 2", "content": "This is the content of Page 2.", "id": "factions"},
+    "characters": {"title": "Characters", "content": "Here you can find the list of characters.", "id": "characters"},
+    "factions": {"title": "Page 2", "content": "This is the content of Page 2.", "id": "factions"}}
     #"Locations": {"title": "Page 3", "content": "This is the content of Page 3.", "id": "locations"},
     #"History": {"title": "Page 4", "content": "This is the content of Page 4.", "id": "history"}
 #}
+
+characters = [
+        {"id": "anariel", "name": "Anariel Raekhem", "description": "Sun elf paladin of Anar the sun god"},
+        {"id": "lady_ishurit", "name": "Lady Ishur Nekht-Tet",
+         "description": "Lady of the Nekht-Tet family, a noble family of sun elves"},
+        {"id": "elthara", "name": "Elthara Nekht-Tet",
+         "description": "Fourth daughter of the Nekht-Tet family, quiet and loves to read"},
+        {"id": "lord_harun", "name": "Lord Harun Nekht-Tet",
+         "description": "Lord of the Nekht-Tet family, esteemed leader of the sun elf community"},
+        {"id": "kaelon", "name": "Kaelon Nekht-Tet",
+         "description": "First son of the Nekht-Tet family, charismatic and ambitious future leader of the family"},
+        {"id": "elara", "name": "Elara Nekht-Tet",
+         "description": "Second daughter of the Nekht-Tet family, adventurous and free-spirited"},
+        {"id": "lirael", "name": "Lirael Nekht-Tet",
+         "description": "Fifth daughter of the Nekht-Tet family, a talented musician and singer"},
+        {"id": "selene", "name": "Selene Nekht-Tet",
+         "description": "Sixth daughter of the Nekht-Tet family, charismatic and skilled in diplomacy"},
+        {"id": "rhydian", "name": "Rhydian Nekht-Tet",
+         "description": "Seventh son of the Nekht-Tet family, deep thinker and philosopher"},
+        {"id": "davhyr", "name": "Davhyr Nekht-Tet",
+         "description": "Third son of the Nekht-Tet family, skilled warrior and tactician"},
+        {"id": "kyiara", "name": "Kyiara Nekht-Tet",
+         "description": "Youngest of the Nekht-Tet family, spirited and brilliant sorceress"}
+    ]
+
+factions = [
+        {"id": "sun_elves_empire", "name": "Sun elves empire", "description": "The empire of the sun elves, residing in the white sea"}
+    ]
+
 
 @app.route('/')
 def index():
