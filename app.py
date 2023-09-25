@@ -34,7 +34,7 @@ characters = [
          "description": "Youngest of the Nekht-Tet family, spirited and brilliant sorceress"}
     ]
 
-factions = [
+factions_list = [
         {"id": "sun_elves_empire", "name": "Sun elves empire", "description": "The empire of the sun elves, residing in the white sea"}
     ]
 
