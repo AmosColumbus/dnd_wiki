@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Character Details{% endblock %}
+
+{% block content %}
+<div class="header">
+<h2>Character Name: Elthara Nekht-Tet</h2>
+<img src="{{ url_for('static', filename='../static/elthara.jpg')}}" height="200">
+</div>
+<div class="content-container">
+    <div class="story">
+         <h2>Personality</h2>
+        <p>Elthara is a quiet and introspective individual. She possesses a keen intellect and a love for learning. She often spends her time lost in books and scrolls, seeking to expand her knowledge. While reserved, she is a compassionate soul and offers insightful advice to her siblings.</p>
+
+        <h2>Backstory</h2>
+        <p>Elthara's affinity for knowledge and wisdom stems from her desire to understand her people's history and traditions. She sees herself as a guardian of the Sun Elves' cultural heritage and strives to bridge the gap between the past and the present.</p>
+    </div>
+</div>
+{% endblock %}

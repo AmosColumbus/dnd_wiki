@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Character Details{% endblock %}
+
+{% block content %}
+<div class="header">
+<h2>Character Name: Lady Ishur Nekht-Tet</h2>
+<img src="{{ url_for('static', filename='../static/ishur.jpg')}}" height="200">
+
+</div>
+<div class="content-container">
+    <div class="story">
+         <h2>Personality</h2>
+        <p>Lady Ishur is a strong and determined woman. She is known for her discipline and unwavering commitment to her family's status and reputation. She can appear cold and rigid to outsiders, but those close to her know that she values tradition and structure. While she is strict, she has a softer side that is reserved for her husband.</p>
+
+        <h2>Backstory</h2>
+        <p>Lady Ishur hails from a long line of esteemed nobles and carries the responsibility of maintaining their family's standing. She has overcome many challenges to ensure her family thrives, even in the ever-changing political landscape. Her dedication to preserving their customs sometimes leads to tension with her more free-spirited children.</p>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}D&D Wiki{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="header">
+        <h1>D&D Campaign Setting Wiki</h1>
+
+        <nav>
+
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('character_list') }}">Characters</a></li>
+
+        </nav>
+            </div>
+    </header>
+
+
+    <main>
+        {% block content %} something {% endblock %}
+    </main>
+    <footer>
+        &copy; 2023 D&D Campaign Setting Wiki
+    </footer>
+</body>
+</html>
