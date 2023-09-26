@@ -6,7 +6,7 @@ app = Flask(__name__)
 wiki_data = {
     "characters": {"title": "Characters", "content": "Here you can find the list of characters.", "id": "characters"},
     "factions": {"title": "Page 2", "content": "This is the content of Page 2.", "id": "factions"}}
-    #"Locations": {"title": "Page 3", "content": "This is the content of Page 3.", "id": "locations"},
+    #"Locations": {"title": "Page 3", "content": "This is the content of Page 3.", "id": "locations"},wedfefdef
     #"History": {"title": "Page 4", "content": "This is the content of Page 4.", "id": "history"}
 #}
 
